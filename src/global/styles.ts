@@ -6,7 +6,7 @@ const GlobalStyle = createGlobalStyle`
     padding: 0;
     box-sizing: border-box;
     font-size: 62.5%; // 10px/16px = 62.5% -> 1rem = 10px
-    font-family: 'Comfortaa', cursive;
+    font-family: 'Montserrat', sans-serif;
   }
 `;
 
