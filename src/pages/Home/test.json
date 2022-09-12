@@ -1,0 +1,307 @@
+[
+  {
+    "id": "fe4e1bd8-d5a9-4148-a831-fcd913d1dac3",
+    "name": "A",
+    "created_at": "2022-09-11T17:00:39.356Z",
+    "updated_at": "2022-09-11T17:00:39.356Z",
+    "deleted_at": null,
+    "teams": [
+      {
+        "id": "a85bf97e-19db-41d9-a88a-3ccf1a38616e",
+        "country": "Brasil",
+        "coach": "Tite",
+        "image": "Brasil118435af-158f-4342-b236-449b9740eea3.svg",
+        "score": 3,
+        "wins": 1,
+        "draws": 0,
+        "losses": 0,
+        "created_at": "2022-09-11T17:02:36.925Z",
+        "updated_at": "2022-09-11T17:14:50.000Z",
+        "deleted_at": null
+      },
+      {
+        "id": "c60630f9-cad4-496b-856c-0db2fa313087",
+        "country": "Sérvia",
+        "coach": "Dragan Stojković",
+        "image": "Servia473e17e6-41a1-4619-8e4b-626e3075c6ea.svg",
+        "score": 0,
+        "wins": 0,
+        "draws": 0,
+        "losses": 0,
+        "created_at": "2022-09-11T17:03:12.321Z",
+        "updated_at": "2022-09-11T17:03:12.321Z",
+        "deleted_at": null
+      },
+      {
+        "id": "ab2766c1-61c1-4b5e-a640-134d19f4cf87",
+        "country": "Suiça",
+        "coach": "Murat Yakın",
+        "image": "Suicaa756cc0d-4f0f-4331-84bd-9b162c5cc2c7.svg",
+        "score": 0,
+        "wins": 0,
+        "draws": 0,
+        "losses": 0,
+        "created_at": "2022-09-11T17:03:43.452Z",
+        "updated_at": "2022-09-11T17:03:43.452Z",
+        "deleted_at": null
+      },
+      {
+        "id": "a1de3652-f784-4271-afc9-bdf4d45f50cb",
+        "country": "Camarões",
+        "coach": "Rigobert Song",
+        "image": "Camaroesfe99af0f-eabb-46b9-9515-f156e4c158b1.svg",
+        "score": 0,
+        "wins": 0,
+        "draws": 0,
+        "losses": 1,
+        "created_at": "2022-09-11T17:04:16.322Z",
+        "updated_at": "2022-09-11T17:14:50.000Z",
+        "deleted_at": null
+      }
+    ]
+  },
+  {
+    "id": "2b6ac58b-3b47-4abd-9a21-58923378d4ba",
+    "name": "B",
+    "created_at": "2022-09-10T04:47:53.477Z",
+    "updated_at": "2022-09-10T04:47:53.477Z",
+    "deleted_at": null,
+    "teams": [
+      {
+        "id": "abb31d5a-4041-407f-9b58-b5c3cb79a923",
+        "country": "País de Gales",
+        "coach": "Rob Page",
+        "image": "Pais_de_Gales098749ae-65ec-4e4c-9c61-a5ced3d4086f.svg",
+        "score": 3,
+        "wins": 1,
+        "draws": 0,
+        "losses": 0,
+        "created_at": "2022-09-10T04:50:49.981Z",
+        "updated_at": "2022-09-10T19:28:24.000Z",
+        "deleted_at": null
+      },
+      {
+        "id": "691aecfe-362f-4175-80b8-e572b7a67ab9",
+        "country": "Estados Unidos",
+        "coach": "Gregg Berhalter",
+        "image": "Estados_Unidos3978fb13-94d0-41d0-ab9f-e6d2d8d451dc.svg",
+        "score": 0,
+        "wins": 0,
+        "draws": 0,
+        "losses": 0,
+        "created_at": "2022-09-11T16:53:51.796Z",
+        "updated_at": "2022-09-11T16:53:51.796Z",
+        "deleted_at": null
+      },
+      {
+        "id": "ea248f8f-cdcc-4634-bf71-18acb3f0a134",
+        "country": "Inglaterra",
+        "coach": "Gareth Southgate",
+        "image": "Brasil672dc3ee-2a86-4923-94ec-83ad0c333dd7.svg",
+        "score": 0,
+        "wins": 0,
+        "draws": 0,
+        "losses": 1,
+        "created_at": "2022-09-10T04:48:13.179Z",
+        "updated_at": "2022-09-10T19:28:24.000Z",
+        "deleted_at": null
+      },
+      {
+        "id": "4828e3a9-b6d1-4204-8daf-c1ce2d1903c8",
+        "country": "Irã",
+        "coach": " Carlos Queiroz",
+        "image": "Iracf0029a7-1776-4811-babd-c167ec852425.svg",
+        "score": 0,
+        "wins": 0,
+        "draws": 0,
+        "losses": 0,
+        "created_at": "2022-09-11T16:54:43.524Z",
+        "updated_at": "2022-09-11T16:54:43.524Z",
+        "deleted_at": null
+      }
+    ]
+  },
+  {
+    "id": "6b2ce943-2690-4a3e-b3a2-ac997dc36cca",
+    "name": "C",
+    "created_at": "2022-09-11T17:15:53.005Z",
+    "updated_at": "2022-09-11T17:15:53.005Z",
+    "deleted_at": null,
+    "teams": [
+      {
+        "id": "adb48741-71e9-4386-a663-34524944972f",
+        "country": "Polônia",
+        "coach": "Czesław Michniewicz",
+        "image": "Polonia1e9f0285-5d2a-458a-867b-b005820ceaeb.svg",
+        "score": 0,
+        "wins": 0,
+        "draws": 0,
+        "losses": 0,
+        "created_at": "2022-09-11T17:18:26.316Z",
+        "updated_at": "2022-09-11T17:18:26.316Z",
+        "deleted_at": null
+      },
+      {
+        "id": "d3417715-5c9a-49fb-a10e-aa83e980d02d",
+        "country": "Arábia Saudita",
+        "coach": "Hervé Renard",
+        "image": "Arabia_Sauditaa9883596-cb8b-4de2-b1d2-f6cba2b8e319.svg",
+        "score": 0,
+        "wins": 0,
+        "draws": 0,
+        "losses": 0,
+        "created_at": "2022-09-11T17:19:02.508Z",
+        "updated_at": "2022-09-11T17:19:02.508Z",
+        "deleted_at": null
+      },
+      {
+        "id": "abcf6cc6-b5b7-4ee6-a630-7899ef79da5b",
+        "country": "Argentina",
+        "coach": "Lionel Scaloni",
+        "image": "Argentina4de6f050-9370-4994-bcb0-39ae1f03aa18.svg",
+        "score": 0,
+        "wins": 0,
+        "draws": 0,
+        "losses": 0,
+        "created_at": "2022-09-11T17:17:11.279Z",
+        "updated_at": "2022-09-11T17:17:11.279Z",
+        "deleted_at": null
+      },
+      {
+        "id": "51d86f41-78f1-40a4-a0b7-999facf3ee41",
+        "country": "México",
+        "coach": "Gerardo Martino",
+        "image": "Mexicoe874ab34-2cd4-4ca3-b07e-cfde5d46c23e.svg",
+        "score": 0,
+        "wins": 0,
+        "draws": 0,
+        "losses": 0,
+        "created_at": "2022-09-11T17:17:49.580Z",
+        "updated_at": "2022-09-11T17:17:49.580Z",
+        "deleted_at": null
+      }
+    ]
+  },
+  {
+    "id": "f0ae2cd9-1726-4acb-9862-8a7b5146a734",
+    "name": "D",
+    "created_at": "2022-09-11T17:19:41.055Z",
+    "updated_at": "2022-09-11T17:19:41.055Z",
+    "deleted_at": null,
+    "teams": [
+      {
+        "id": "7484ef11-abfb-4206-8833-057c955786c6",
+        "country": "Dinamarca",
+        "coach": "Kasper Hjulmand",
+        "image": "Dinamarca7befbf9e-7fbe-4a31-9b84-8ebb600240e2.svg",
+        "score": 0,
+        "wins": 0,
+        "draws": 0,
+        "losses": 0,
+        "created_at": "2022-09-11T17:23:38.967Z",
+        "updated_at": "2022-09-11T17:23:38.967Z",
+        "deleted_at": null
+      },
+      {
+        "id": "853795ab-04f3-4e79-90dd-98741894d6ce",
+        "country": "Tunísia",
+        "coach": "Jalel Kadri",
+        "image": "Tunisia73f3ae6c-e8cf-44b2-be96-130a05da2cfa.svg",
+        "score": 0,
+        "wins": 0,
+        "draws": 0,
+        "losses": 0,
+        "created_at": "2022-09-11T17:23:04.161Z",
+        "updated_at": "2022-09-11T17:23:04.161Z",
+        "deleted_at": null
+      },
+      {
+        "id": "8fb24a5a-12fb-43ec-901f-c004ff50ac36",
+        "country": "Austrália",
+        "coach": "Graham Arnold",
+        "image": "Australia8cb59554-98e8-4093-aab0-5bae21ae2d5f.svg",
+        "score": 0,
+        "wins": 0,
+        "draws": 0,
+        "losses": 0,
+        "created_at": "2022-09-11T17:24:18.079Z",
+        "updated_at": "2022-09-11T17:24:18.079Z",
+        "deleted_at": null
+      },
+      {
+        "id": "d812d0e1-691b-423e-9676-deabad515e31",
+        "country": "França",
+        "coach": "Didier Deschamps",
+        "image": "Francae01f6683-92f4-4857-a91b-e08084447e75.svg",
+        "score": 0,
+        "wins": 0,
+        "draws": 0,
+        "losses": 0,
+        "created_at": "2022-09-11T17:22:33.214Z",
+        "updated_at": "2022-09-11T17:22:33.214Z",
+        "deleted_at": null
+      }
+    ]
+  },
+  {
+    "id": "f2ce0760-6aae-4545-8221-4090d1feeb86",
+    "name": "E",
+    "created_at": "2022-09-11T17:26:05.621Z",
+    "updated_at": "2022-09-11T17:26:05.621Z",
+    "deleted_at": null,
+    "teams": [
+      {
+        "id": "42bf648d-a141-4ea6-bb6a-a6ae40d9a9c9",
+        "country": "Espanha",
+        "coach": "Luis Enrique",
+        "image": "Espanha1a1b593b-a63e-491d-a771-3c0a7aa7509a.svg",
+        "score": 0,
+        "wins": 0,
+        "draws": 0,
+        "losses": 0,
+        "created_at": "2022-09-11T17:29:41.842Z",
+        "updated_at": "2022-09-11T17:29:41.842Z",
+        "deleted_at": null
+      },
+      {
+        "id": "77933e68-5eba-4805-b4a4-5b17d2ad663b",
+        "country": "Alemanha",
+        "coach": "Hans-Dieter Flick",
+        "image": "Alemanha93df36c7-bb0d-4c42-a2e2-af4f3ae1d9fa.svg",
+        "score": 0,
+        "wins": 0,
+        "draws": 0,
+        "losses": 0,
+        "created_at": "2022-09-11T17:26:45.392Z",
+        "updated_at": "2022-09-11T17:26:45.392Z",
+        "deleted_at": null
+      },
+      {
+        "id": "c04e5c13-3a4c-4fe8-b570-fb5c15224884",
+        "country": "Costa Rica",
+        "coach": "Luis Fernando Suárez",
+        "image": "Costa_Rica4cbb3bfe-c0af-445d-8c59-c61f5e538df2.svg",
+        "score": 0,
+        "wins": 0,
+        "draws": 0,
+        "losses": 0,
+        "created_at": "2022-09-11T17:30:54.727Z",
+        "updated_at": "2022-09-11T17:30:54.727Z",
+        "deleted_at": null
+      },
+      {
+        "id": "ccf4679d-6000-49d8-a398-be2e2c1abc4f",
+        "country": "Japão",
+        "coach": "Hajime Moriyasu",
+        "image": "Japao5b70894b-8e92-4d58-8067-1b9090a67059.svg",
+        "score": 0,
+        "wins": 0,
+        "draws": 0,
+        "losses": 0,
+        "created_at": "2022-09-11T17:27:23.321Z",
+        "updated_at": "2022-09-11T17:27:23.321Z",
+        "deleted_at": null
+      }
+    ]
+  }
+]
