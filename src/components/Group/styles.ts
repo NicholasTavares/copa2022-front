@@ -11,6 +11,8 @@ export const GroupContainer = styled.div`
   border-radius: 1rem;
   border: 1px solid ${({theme}) => theme.colors.gray};
   padding: 1rem;
+  background-color: ${({theme}) => theme.colors.snow};
+  box-shadow: 2px 4px 10px 1px rgba(0, 0, 0, 0.24);
 
   ${media.greaterThan("medium")`
     padding: 1.2rem;
@@ -31,11 +33,6 @@ export const GroupTitle = styled.div`
 
   ${media.greaterThan("medium")`
     font-size: 1.6rem;
-    margin-bottom: 0.8rem;
-  `}
-
-  ${media.greaterThan("large")`
-    font-size: 1.8rem;
     margin-bottom: 0.8rem;
   `}
 `
@@ -81,10 +78,6 @@ export const GroupTeamCountry = styled.span`
   ${media.greaterThan("medium")`
     font-size: 1.6rem;
   `}
-
-  ${media.greaterThan("large")`
-    font-size: 1.8rem;
-  `}
 `
 
 export const GroupTeamScore = styled.span`
@@ -104,11 +97,5 @@ export const GroupTeamScore = styled.span`
     font-size: 1.6rem;
     width: 2.8rem;
     height: 2.8rem;
-  `}
-
-  ${media.greaterThan("large")`
-    font-size: 1.8rem;
-    width: 3rem;
-    height: 3rem;
   `}
 `

@@ -1,7 +1,7 @@
 import React from "react";
 import * as S from "./styles";
 
-type ITeam = {
+type Team = {
   id: string;
   country: string;
   coach: string;
@@ -12,12 +12,12 @@ type ITeam = {
   losses: number;
 };
 
-type IGroup = {
+type GroupProps = {
   group_name: string;
-  teams: ITeam[];
+  teams: Team[];
 };
 
-const Group: React.FC<IGroup> = ({ group_name, teams }) => {
+const Group: React.FC<GroupProps> = ({ group_name, teams }) => {
   return (
     <S.GroupContainer>
       <S.GroupTitle>Grupo {group_name}</S.GroupTitle>
