@@ -1,9 +1,11 @@
 import { configureStore } from "@reduxjs/toolkit";
 import teamReducer from '../redux/teamSlice'
+import groupReducer from '../redux/groupSlice'
 
 const store = configureStore({
   reducer: {
-    team: teamReducer
+    team: teamReducer,
+    group: groupReducer
   }
 })
 
