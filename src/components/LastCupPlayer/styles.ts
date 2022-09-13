@@ -12,8 +12,8 @@ type Darker = {
 export const Container = styled.div`
   perspective: 150rem;
   position: relative;
-  width: 18rem;
-  height: 28rem;
+  width: 16rem;
+  height: 26rem;
 
   ${media.greaterThan("small")`
     width: 20rem;
@@ -86,14 +86,14 @@ export const CardBack = styled.div<Image>`
 
 export const NameContainer = styled.div`
   position: absolute;
-  top: 82%;
+  top: 80%;
   left: 8%;
   display: flex;
   flex-direction: column;
 `
 
 export const DetailText = styled.span<Darker>`
-  font-size: 1.3rem;
+  font-size: 1.25rem;
   text-transform: uppercase;
   color: ${({theme}) => theme.colors.light};
   background-color: ${(props) => props.darker ? props.theme.colors.catar : props.theme.colors.dark_light};
