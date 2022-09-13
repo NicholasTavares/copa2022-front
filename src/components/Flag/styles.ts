@@ -18,6 +18,7 @@ export const FlagImage = styled.div<Image>`
   border: 1px solid ${({theme}) => theme.colors.gray};
   background: url(${(props) => props.image_url});
   background-size: cover;
+  background-position: center;
   margin-bottom: 0.5rem;
   box-shadow: 2px 4px 10px 1px rgba(0, 0, 0, 0.24);
 
