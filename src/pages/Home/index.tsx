@@ -2,28 +2,24 @@ import React from "react";
 import * as S from "./styles";
 import logo from "../../assets/logo.svg";
 import Group from "../../components/Group";
-import test from "./test.json";
 import LastCupPlayer from "../../components/LastCupPlayer";
 import qatar_stadium from "../../assets/background/qatar_stadium.jpg";
 import Flag from "../../components/Flag";
-import CatarFlag from "../../assets/Estados_Unidos.svg";
 import Map from "../../components/Map/index";
 import Footer from "../../components/Footer";
 import { useSelector } from "react-redux";
 import { AppDispatch, RootState } from "../../redux/store";
 import { useDispatch } from "react-redux";
-import { getTeam } from "../../redux/teamSlice";
+import { getAllGroups } from "../../redux/groupSlice";
 
 const Home: React.FC = () => {
-  const teams = useSelector((state: RootState) => state.team.getTeam);
+  const groups = useSelector((state: RootState) => state.group.getAllGroups);
   const dispatch = useDispatch<AppDispatch>();
 
   React.useEffect(() => {
-    dispatch(getTeam({ id: "abb31d5a-4041-407f-9b58-b5c3cb79a923" }));
+    dispatch(getAllGroups());
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
-
-  console.log(teams);
 
   return (
     <S.Container>
@@ -49,15 +45,12 @@ const Home: React.FC = () => {
           <S.SectionTitle dark>Seleções participantes</S.SectionTitle>
         </S.SectionTitleContainer>
         <S.TeamsContainerGrid>
-          <Flag image_url={CatarFlag} country_name="Catar" />
-          <Flag image_url={CatarFlag} country_name="Catar" />
-          <Flag image_url={CatarFlag} country_name="Catar" />
-          <Flag image_url={CatarFlag} country_name="Catar" />
-          <Flag image_url={CatarFlag} country_name="Catar" />
-          <Flag image_url={CatarFlag} country_name="Catar" />
-          <Flag image_url={CatarFlag} country_name="Catar" />
-          <Flag image_url={CatarFlag} country_name="Catar" />
-          <Flag image_url={CatarFlag} country_name="Catar" />
+          {groups.length > 1 &&
+            groups.map((group) => {
+              return group.teams.map((team) => (
+                <Flag image_url={team.image} country_name={team.country} />
+              ));
+            })}
         </S.TeamsContainerGrid>
       </S.TeamsSection>
 
@@ -66,9 +59,14 @@ const Home: React.FC = () => {
           <S.SectionTitle>Grupos</S.SectionTitle>
         </S.SectionTitleContainer>
         <S.GroupsContainerGrid>
-          {test.map((group) => (
-            <Group group_name={group.name} teams={group.teams} key={group.id} />
-          ))}
+          {groups.length > 1 &&
+            groups.map((group) => (
+              <Group
+                group_name={group.name}
+                teams={group.teams}
+                key={group.id}
+              />
+            ))}
         </S.GroupsContainerGrid>
       </S.GroupsSection>
 
