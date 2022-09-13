@@ -1,25 +1,47 @@
 import React from "react";
 import * as S from "./styles";
 import logo from "../../assets/logo.svg";
-import backgroundWelcome from "../../assets/catar_sea.jpg";
 import Group from "../../components/Group";
 import test from "./test.json";
 import LastCupPlayer from "../../components/LastCupPlayer";
+import qatar_stadium from "../../assets/background/qatar_stadium.jpg";
 import Flag from "../../components/Flag";
 import CatarFlag from "../../assets/Estados_Unidos.svg";
+import Map from "../../components/Map/index";
+import Footer from "../../components/Footer";
+import { useSelector } from "react-redux";
+import { AppDispatch, RootState } from "../../redux/store";
+import { useDispatch } from "react-redux";
+import { getTeam } from "../../redux/teamSlice";
 
 const Home: React.FC = () => {
+  const teams = useSelector((state: RootState) => state.team.getTeam);
+  const dispatch = useDispatch<AppDispatch>();
+
+  React.useEffect(() => {
+    dispatch(getTeam({ id: "abb31d5a-4041-407f-9b58-b5c3cb79a923" }));
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
+
+  console.log(teams);
+
   return (
     <S.Container>
-      <S.WelcomeSection image_url={backgroundWelcome}>
-        <S.NavBar>
+      <S.WelcomeSection image_url={qatar_stadium}>
+        <S.WelcomeContainer>
           <S.LogoContainer href="https://www.qatar2022.qa/">
-            <S.Logo
-              src={logo}
-              alt="Imagem de barco no mar com bandeira do Catar e prédios ao fundo."
-            />
+            <S.Logo src={logo} />
           </S.LogoContainer>
-        </S.NavBar>
+          <S.ParagraphContainer>
+            <S.ParagraphTitle>
+              Está chegando a Copa do Mundo 2022!
+            </S.ParagraphTitle>
+            <S.Paragraph>
+              Confira os principais detalhes da copa do Catar. Seleções, fase
+              grupos, curiosidades e explore a localidade!
+            </S.Paragraph>
+          </S.ParagraphContainer>
+        </S.WelcomeContainer>
       </S.WelcomeSection>
 
       <S.TeamsSection>
@@ -122,6 +144,15 @@ const Home: React.FC = () => {
           />
         </S.LastCupPlayersGrid>
       </S.LastCupPlayersSection>
+
+      <S.MapSection>
+        <S.SectionTitleContainer>
+          <S.SectionTitle dark>Explore a área</S.SectionTitle>
+        </S.SectionTitleContainer>
+        <Map />
+      </S.MapSection>
+
+      <Footer />
     </S.Container>
   );
 };

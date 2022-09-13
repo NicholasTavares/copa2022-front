@@ -44,39 +44,101 @@ export const SectionTitle = styled.h2<Dark>`
 // WELCOME SECTION
 
 export const WelcomeSection = styled.section<ImageURL>`
+  position: relative;
   width: 100vw;
   height: 100vh;
   display: flex;
   flex-direction: column;
   padding: 1.5rem;
-  background: url(${({ image_url }) => image_url});
-  background-size: cover;
-  background-position-x: 50%;
+  background: url(${(props) => props.image_url});
 
-  ${media.greaterThan("medium")`
+  ${media.lessThan("large")`
+    background: ${({theme}) => theme.colors.dark};
     padding: 2rem;
   `}
+
+  ${media.greaterThan("large")`
+    justify-content: flex-start;
+  `}
+  
+
+  background-size: cover;
+  background-position-y: 48%;
 `
 
-export const NavBar = styled.nav`
+export const WelcomeContainer = styled.div`
+  margin-top: 2rem;
+  margin-bottom: auto;
   display: flex;
-  justify-content: left;
+  flex-direction: column;
   align-items: center;
+  justify-content: center;
+  padding: 1rem;
+
+  ${media.greaterThan("medium")`
+    margin-top: auto;
+    flex-direction: row;
+    justify-content: space-between;
+  `}
+
+  ${media.greaterThan("large")`
+    flex-direction: column;
+    justify-content: start;
+    margin-top: 0;
+  `}
 `
 
 export const LogoContainer = styled.a`
   display: flex;
-  align-items: center;
+  align-items: flex-end;
   justify-content: center;
-  width: 12rem;
-  height: 4.5rem;
-  border: 1px solid ${({theme}) => theme.colors.gray};
-  border-radius: 3rem;
-  background-color: ${({theme}) => theme.colors.light};
 `
 
 export const Logo = styled.img`
-  width: 8rem;
+  width: 25rem;
+  filter: contrast(0%) brightness(200%) saturate(30%);
+
+  ${media.greaterThan("small")`
+    width: 30rem;
+  `}
+
+  ${media.greaterThan("large")`
+    width: 34rem;
+  `}
+`
+
+export const ParagraphContainer = styled.div`
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 2rem;
+  backdrop-filter: blur(10px);
+  margin-top: 10rem;
+  width: 30rem;
+  height: 25rem;
+  padding: 2rem;
+
+  ${media.greaterThan("small")`
+    width: 32rem;
+    height: 28rem;
+  `}
+`
+
+export const ParagraphTitle = styled.h2`
+  color: ${({theme}) => theme.colors.light};
+  font-size: 2rem;
+  margin-bottom: 2rem;
+
+  ${media.greaterThan("small")`
+    font-size: 2.1rem;
+  `}
+`
+
+export const Paragraph = styled.p`
+  color: ${({theme}) => theme.colors.light};
+  font-size: 1.8rem;
+
+  ${media.greaterThan("small")`
+    font-size: 1.9rem;
+  `}
 `
 
 // TEAM SECTION
@@ -130,7 +192,6 @@ export const GroupsContainerGrid = styled.div`
   grid-gap: 1rem;
   grid-template-rows: repeat(1, 1fr);
   grid-template-columns: repeat(1, 1fr);
-  transition: all 500ms;
 
   ${media.greaterThan("small")`
     grid-template-columns: repeat(2, 1fr);
@@ -174,4 +235,14 @@ export const LastCupPlayersGrid = styled.div`
   ${media.greaterThan("large")`
     grid-template-columns: repeat(5, 1fr);
   `}
+`
+
+// MAP SECTION
+
+export const MapSection = styled.section`
+  position: relative;
+  width: 100%;
+  height: 50rem;
+  background-color: ${({theme}) => theme.colors.gray_light};
+  padding: 1.5rem;
 `
