@@ -12,10 +12,15 @@ import Footer from "../../components/Footer";
 import data_players from "../../components/LastCupPlayer/data.json";
 import { AppDispatch, RootState } from "../../redux/store";
 import { getAllGroups } from "../../redux/groupSlice";
+import { AiOutlinePlus } from "react-icons/ai";
+import FormGroup from "../../components/Forms/FormGroup";
+import { AddGroupButton } from "./styles";
 
 const Home: React.FC = () => {
   const groups = useSelector((state: RootState) => state.group.getAllGroups);
   const dispatch = useDispatch<AppDispatch>();
+  const [showGroupForm, setShowGroupForm] = React.useState(false);
+  const [showTeamForm, setTeamGroupForm] = React.useState(false);
 
   React.useEffect(() => {
     dispatch(getAllGroups());
@@ -44,20 +49,33 @@ const Home: React.FC = () => {
       <S.TeamsSection>
         <S.SectionTitleContainer>
           <S.SectionTitle dark>Seleções participantes</S.SectionTitle>
+          <AddGroupButton onClick={() => setTeamGroupForm(!showTeamForm)}>
+            <AiOutlinePlus />
+          </AddGroupButton>
         </S.SectionTitleContainer>
         <S.TeamsContainerGrid>
           {groups.length > 1 &&
-            groups.map((group) => {
-              return group.teams.map((team) => (
-                <Flag image_url={team.image} country_name={team.country} />
-              ));
-            })}
+            groups.map((group) =>
+              group.teams.map((team) => (
+                <S.TeamLink to={`teams/${team.id}`}>
+                  <Flag
+                    key={team.id}
+                    image_url={team.image}
+                    country_name={team.country}
+                  />
+                </S.TeamLink>
+              ))
+            )}
         </S.TeamsContainerGrid>
       </S.TeamsSection>
 
       <S.GroupsSection>
         <S.SectionTitleContainer>
           <S.SectionTitle>Grupos</S.SectionTitle>
+          <AddGroupButton onClick={() => setShowGroupForm(!showGroupForm)}>
+            <AiOutlinePlus />
+          </AddGroupButton>
+          {showGroupForm && <FormGroup />}
         </S.SectionTitleContainer>
         <S.GroupsContainerGrid>
           {groups.length > 1 &&
@@ -78,6 +96,7 @@ const Home: React.FC = () => {
         <S.LastCupPlayersGrid>
           {data_players.map((player) => (
             <LastCupPlayer
+              key={player.name}
               name={player.name}
               team={player.team}
               age={player.age}

@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import styled, { css } from "styled-components";
 import media from "styled-media-query";
 
@@ -16,8 +17,10 @@ export const Container = styled.div`
 `
 
 export const SectionTitleContainer = styled.div`
+  position: relative;
   display: flex;
   justify-content: left;
+  align-items: center;
   margin-top: 2rem;
   margin-bottom: 4rem;
 `
@@ -174,6 +177,10 @@ export const TeamsContainerGrid = styled.div`
   `}
 `
 
+export const TeamLink = styled(Link)`
+  text-decoration: none;
+`
+
 // GROUPS SECTION
 
 export const GroupsSection = styled.section`
@@ -185,6 +192,24 @@ export const GroupsSection = styled.section`
   ${media.greaterThan("medium")`
     padding: 2rem;
   `}
+`
+
+export const AddGroupButton = styled.div`
+  margin-left: auto;
+  width: 4rem;
+  height: 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  border: 1px solid ${({theme}) => theme.colors.dark};
+  background-color: ${({theme}) => theme.colors.light};
+  cursor: pointer;
+
+  & > svg {
+    font-size: 3rem;
+    color: ${({theme}) => theme.colors.dark};
+  }
 `
 
 export const GroupsContainerGrid = styled.div`
