@@ -3,7 +3,7 @@ import { api } from "../services/base";
 
 type CreateGrop = {
   name: string,
-  status: string
+  status?: string
 }
 
 type Player = {
@@ -30,7 +30,7 @@ type Team = {
 }
 
 type GetGroup = {
-  id: string;
+  id?: string;
 }
 
 type GroupResponse = {
@@ -124,7 +124,8 @@ const initialState: IStateGroup = {
 export const group = createAsyncThunk('groups/',
   async ({name}: CreateGrop, {rejectWithValue}) => {
     try{
-      const response = await api.post('groups/', name)
+      const response = await api.post('groups/', {name: name})
+      window.location.reload()
       return response.data
     } catch (err) {
       return rejectWithValue(err)
