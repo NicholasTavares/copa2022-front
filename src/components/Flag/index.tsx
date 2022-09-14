@@ -3,7 +3,7 @@ import * as S from "./styles";
 
 type FlagProps = {
   image_url: string;
-  country_name: string;
+  country_name?: string;
 };
 
 const Flag: React.FC<FlagProps> = ({ image_url, country_name }) => {

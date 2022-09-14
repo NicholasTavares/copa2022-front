@@ -9,6 +9,7 @@ export const Container = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: left;
+  cursor: pointer;
 `
 
 export const FlagImage = styled.div<Image>`
