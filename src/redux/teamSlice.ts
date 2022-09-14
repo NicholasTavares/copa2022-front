@@ -37,7 +37,7 @@ type Game = {
 }
 
 type GetTeam = {
-  id: string;
+  id?: string;
 }
 
 type TeamResponse = {
